@@ -7,9 +7,9 @@ The test automation scripts are written in Java using the Rest Assured library. 
 # Prerequisites
 Before running the automation scripts, ensure you have the following installed:
 
-Java Development Kit (JDK) - 11
-Maven
-TestNG (for running the test suite)
+ Java Development Kit (JDK) - 11
+ Maven
+ TestNG (for running the test suite)
 
 # Execution
 Use Testng.xml file in project for execution
