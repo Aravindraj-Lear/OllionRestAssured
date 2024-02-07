@@ -1,0 +1,197 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1707302546.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"items",
+		"has_more",
+		"quota_max",
+		"quota_remaining"
+	],
+	"properties": {
+		"items": {
+			"$id": "#root/items", 
+			"title": "Items", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/items/items", 
+				"title": "Items", 
+				"type": "object",
+				"required": [
+					"user",
+					"badge_type",
+					"rank",
+					"badge_id",
+					"link",
+					"name"
+				],
+				"properties": {
+					"user": {
+						"$id": "#root/items/items/user", 
+						"title": "User", 
+						"type": "object",
+						"required": [
+							"account_id",
+							"reputation",
+							"user_id",
+							"user_type",
+							"profile_image",
+							"display_name",
+							"link"
+						],
+						"properties": {
+							"account_id": {
+								"$id": "#root/items/items/user/account_id", 
+								"title": "Account_id", 
+								"type": "integer",
+								"examples": [
+									30477327
+								],
+								"default": 0
+							},
+							"reputation": {
+								"$id": "#root/items/items/user/reputation", 
+								"title": "Reputation", 
+								"type": "integer",
+								"examples": [
+									1
+								],
+								"default": 0
+							},
+							"user_id": {
+								"$id": "#root/items/items/user/user_id", 
+								"title": "User_id", 
+								"type": "integer",
+								"examples": [
+									23355770
+								],
+								"default": 0
+							},
+							"user_type": {
+								"$id": "#root/items/items/user/user_type", 
+								"title": "User_type", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"registered"
+								],
+								"pattern": "^.*$"
+							},
+							"profile_image": {
+								"$id": "#root/items/items/user/profile_image", 
+								"title": "Profile_image", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"https://www.gravatar.com/avatar/9727db3177e315fbf069e241514d4e05?s=256&d=identicon&r=PG&f=y&so-version=2"
+								],
+								"pattern": "^.*$"
+							},
+							"display_name": {
+								"$id": "#root/items/items/user/display_name", 
+								"title": "Display_name", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"user23355770"
+								],
+								"pattern": "^.*$"
+							},
+							"link": {
+								"$id": "#root/items/items/user/link", 
+								"title": "Link", 
+								"type": "string",
+								"default": "",
+								"examples": [
+									"https://stackoverflow.com/users/23355770/user23355770"
+								],
+								"pattern": "^.*$"
+							}
+						}
+					}
+,
+					"badge_type": {
+						"$id": "#root/items/items/badge_type", 
+						"title": "Badge_type", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"named"
+						],
+						"pattern": "^.*$"
+					},
+					"rank": {
+						"$id": "#root/items/items/rank", 
+						"title": "Rank", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"bronze"
+						],
+						"pattern": "^.*$"
+					},
+					"badge_id": {
+						"$id": "#root/items/items/badge_id", 
+						"title": "Badge_id", 
+						"type": "integer",
+						"examples": [
+							2600
+						],
+						"default": 0
+					},
+					"link": {
+						"$id": "#root/items/items/link", 
+						"title": "Link", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"https://stackoverflow.com/badges/2600/informed"
+						],
+						"pattern": "^.*$"
+					},
+					"name": {
+						"$id": "#root/items/items/name", 
+						"title": "Name", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"Informed"
+						],
+						"pattern": "^.*$"
+					}
+				}
+			}
+
+		},
+		"has_more": {
+			"$id": "#root/has_more", 
+			"title": "Has_more", 
+			"type": "boolean",
+			"examples": [
+				true
+			],
+			"default": true
+		},
+		"quota_max": {
+			"$id": "#root/quota_max", 
+			"title": "Quota_max", 
+			"type": "integer",
+			"examples": [
+				300
+			],
+			"default": 0
+		},
+		"quota_remaining": {
+			"$id": "#root/quota_remaining", 
+			"title": "Quota_remaining", 
+			"type": "integer",
+			"examples": [
+				171
+			],
+			"default": 0
+		}
+	}
+}

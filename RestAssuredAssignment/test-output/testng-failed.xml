@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Ollion.RestAssuredAssignment.badges_ids_GET">
+        <methods>
+          <include name="testInvalidMinParameter"/>
+          <include name="testInvalidPageNumber"/>
+          <include name="testInvalidPageSize"/>
+          <include name="testInvalidAuthorizationToken"/>
+          <include name="testInvalidDateFormat"/>
+          <include name="testInvalidOrderParameter"/>
+          <include name="testInvalidSortParameter"/>
+          <include name="testMissingRequiredParameters"/>
+          <include name="testInvalidID"/>
+          <include name="setUp"/>
+          <include name="testValidRequest"/>
+        </methods>
+      </class> <!-- Ollion.RestAssuredAssignment.badges_ids_GET -->
+      <class name="Ollion.RestAssuredAssignment.badges_Recipients_GET">
+        <methods>
+          <include name="testInvalidDateFormat"/>
+          <include name="setUp"/>
+          <include name="testValidRequest"/>
+          <include name="testInvalidPageNumber"/>
+          <include name="testInvalidPageSize"/>
+          <include name="testInvalidAuthorizationToken"/>
+          <include name="testMissingRequiredParameters"/>
+        </methods>
+      </class> <!-- Ollion.RestAssuredAssignment.badges_Recipients_GET -->
+      <class name="Ollion.RestAssuredAssignment.badges_tags_GET">
+        <methods>
+          <include name="testInvalidDateFormat"/>
+          <include name="testMissingRequiredParameters"/>
+          <include name="testInvalidPageNumber"/>
+          <include name="testInvalidPageSize"/>
+          <include name="testInvalidAuthorizationToken"/>
+          <include name="testInvalidMinParameter"/>
+          <include name="testInvalidSortParameter"/>
+          <include name="testValidRequest"/>
+          <include name="testInvalidOrderParameter"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Ollion.RestAssuredAssignment.badges_tags_GET -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

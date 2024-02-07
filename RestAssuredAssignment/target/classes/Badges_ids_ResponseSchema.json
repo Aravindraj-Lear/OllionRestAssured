@@ -1,0 +1,122 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1707321214.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"items",
+		"has_more",
+		"quota_max",
+		"quota_remaining"
+	],
+	"properties": {
+		"items": {
+			"$id": "#root/items", 
+			"title": "Items", 
+			"type": "array",
+			"default": [],
+			"items":{
+				"$id": "#root/items/items", 
+				"title": "Items", 
+				"type": "object",
+				"required": [
+					"badge_type",
+					"award_count",
+					"rank",
+					"badge_id",
+					"link",
+					"name"
+				],
+				"properties": {
+					"badge_type": {
+						"$id": "#root/items/items/badge_type", 
+						"title": "Badge_type", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"tag_based"
+						],
+						"pattern": "^.*$"
+					},
+					"award_count": {
+						"$id": "#root/items/items/award_count", 
+						"title": "Award_count", 
+						"type": "integer",
+						"examples": [
+							315
+						],
+						"default": 0
+					},
+					"rank": {
+						"$id": "#root/items/items/rank", 
+						"title": "Rank", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"bronze"
+						],
+						"pattern": "^.*$"
+					},
+					"badge_id": {
+						"$id": "#root/items/items/badge_id", 
+						"title": "Badge_id", 
+						"type": "integer",
+						"examples": [
+							928
+						],
+						"default": 0
+					},
+					"link": {
+						"$id": "#root/items/items/link", 
+						"title": "Link", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"https://stackoverflow.com/badges/928/go"
+						],
+						"pattern": "^.*$"
+					},
+					"name": {
+						"$id": "#root/items/items/name", 
+						"title": "Name", 
+						"type": "string",
+						"default": "",
+						"examples": [
+							"go"
+						],
+						"pattern": "^.*$"
+					}
+				}
+			}
+
+		},
+		"has_more": {
+			"$id": "#root/has_more", 
+			"title": "Has_more", 
+			"type": "boolean",
+			"examples": [
+				false
+			],
+			"default": true
+		},
+		"quota_max": {
+			"$id": "#root/quota_max", 
+			"title": "Quota_max", 
+			"type": "integer",
+			"examples": [
+				300
+			],
+			"default": 0
+		},
+		"quota_remaining": {
+			"$id": "#root/quota_remaining", 
+			"title": "Quota_remaining", 
+			"type": "integer",
+			"examples": [
+				43
+			],
+			"default": 0
+		}
+	}
+}

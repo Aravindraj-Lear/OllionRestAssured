@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 25 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\HP\eclipse-workspace\RestAssuredAssignment\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">25 methods, 25 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_tags_GET" class="method navigator-link" hash-for-method="testInvalidAuthorizationToken">testInvalidAuthorizationToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_Recipients_GET" class="method navigator-link" hash-for-method="testInvalidAuthorizationToken">testInvalidAuthorizationToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_ids_GET" class="method navigator-link" hash-for-method="testInvalidAuthorizationToken">testInvalidAuthorizationToken</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_tags_GET" class="method navigator-link" hash-for-method="testInvalidDateFormat">testInvalidDateFormat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_Recipients_GET" class="method navigator-link" hash-for-method="testInvalidDateFormat">testInvalidDateFormat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_ids_GET" class="method navigator-link" hash-for-method="testInvalidDateFormat">testInvalidDateFormat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_ids_GET" class="method navigator-link" hash-for-method="testInvalidID">testInvalidID</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_tags_GET" class="method navigator-link" hash-for-method="testInvalidMinParameter">testInvalidMinParameter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_ids_GET" class="method navigator-link" hash-for-method="testInvalidMinParameter">testInvalidMinParameter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_tags_GET" class="method navigator-link" hash-for-method="testInvalidOrderParameter">testInvalidOrderParameter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_ids_GET" class="method navigator-link" hash-for-method="testInvalidOrderParameter">testInvalidOrderParameter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_Recipients_GET" class="method navigator-link" hash-for-method="testInvalidPageNumber">testInvalidPageNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_ids_GET" class="method navigator-link" hash-for-method="testInvalidPageNumber">testInvalidPageNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_tags_GET" class="method navigator-link" hash-for-method="testInvalidPageNumber">testInvalidPageNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_ids_GET" class="method navigator-link" hash-for-method="testInvalidPageSize">testInvalidPageSize</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_Recipients_GET" class="method navigator-link" hash-for-method="testInvalidPageSize">testInvalidPageSize</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_tags_GET" class="method navigator-link" hash-for-method="testInvalidPageSize">testInvalidPageSize</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_tags_GET" class="method navigator-link" hash-for-method="testInvalidSortParameter">testInvalidSortParameter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_ids_GET" class="method navigator-link" hash-for-method="testInvalidSortParameter">testInvalidSortParameter</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_tags_GET" class="method navigator-link" hash-for-method="testMissingRequiredParameters">testMissingRequiredParameters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_Recipients_GET" class="method navigator-link" hash-for-method="testMissingRequiredParameters">testMissingRequiredParameters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_ids_GET" class="method navigator-link" hash-for-method="testMissingRequiredParameters">testMissingRequiredParameters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_Recipients_GET" class="method navigator-link" hash-for-method="testValidRequest">testValidRequest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_tags_GET" class="method navigator-link" hash-for-method="testValidRequest">testValidRequest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Ollion.RestAssuredAssignment.badges_ids_GET" class="method navigator-link" hash-for-method="testValidRequest">testValidRequest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Ollion.RestAssuredAssignment.badges_ids_GET</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidAuthorizationToken">
+                  </a> <!-- testInvalidAuthorizationToken -->
+                  <span class="method-name">testInvalidAuthorizationToken</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [400]
+	at Ollion.RestAssuredAssignment.badges_ids_GET.testInvalidAuthorizationToken(badges_ids_GET.java:87)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidDateFormat">
+                  </a> <!-- testInvalidDateFormat -->
+                  <span class="method-name">testInvalidDateFormat</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [400]
+	at Ollion.RestAssuredAssignment.badges_ids_GET.testInvalidDateFormat(badges_ids_GET.java:216)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidID">
+                  </a> <!-- testInvalidID -->
+                  <span class="method-name">testInvalidID</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [404] but found [502]
+	at Ollion.RestAssuredAssignment.badges_ids_GET.testInvalidID(badges_ids_GET.java:317)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidMinParameter">
+                  </a> <!-- testInvalidMinParameter -->
+                  <span class="method-name">testInvalidMinParameter</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [502]
+	at Ollion.RestAssuredAssignment.badges_ids_GET.testInvalidMinParameter(badges_ids_GET.java:249)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidOrderParameter">
+                  </a> <!-- testInvalidOrderParameter -->
+                  <span class="method-name">testInvalidOrderParameter</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [502]
+	at Ollion.RestAssuredAssignment.badges_ids_GET.testInvalidOrderParameter(badges_ids_GET.java:186)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidPageNumber">
+                  </a> <!-- testInvalidPageNumber -->
+                  <span class="method-name">testInvalidPageNumber</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [502]
+	at Ollion.RestAssuredAssignment.badges_ids_GET.testInvalidPageNumber(badges_ids_GET.java:123)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidPageSize">
+                  </a> <!-- testInvalidPageSize -->
+                  <span class="method-name">testInvalidPageSize</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [400]
+	at Ollion.RestAssuredAssignment.badges_ids_GET.testInvalidPageSize(badges_ids_GET.java:153)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidSortParameter">
+                  </a> <!-- testInvalidSortParameter -->
+                  <span class="method-name">testInvalidSortParameter</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [502]
+	at Ollion.RestAssuredAssignment.badges_ids_GET.testInvalidSortParameter(badges_ids_GET.java:283)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMissingRequiredParameters">
+                  </a> <!-- testMissingRequiredParameters -->
+                  <span class="method-name">testMissingRequiredParameters</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [502]
+	at Ollion.RestAssuredAssignment.badges_ids_GET.testMissingRequiredParameters(badges_ids_GET.java:344)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidRequest">
+                  </a> <!-- testValidRequest -->
+                  <span class="method-name">testValidRequest</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Schema to use cannot be null
+	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+	at Ollion.RestAssuredAssignment.badges_ids_GET.testValidRequest(badges_ids_GET.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Ollion.RestAssuredAssignment.badges_Recipients_GET</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidAuthorizationToken">
+                  </a> <!-- testInvalidAuthorizationToken -->
+                  <span class="method-name">testInvalidAuthorizationToken</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [400]
+	at Ollion.RestAssuredAssignment.badges_Recipients_GET.testInvalidAuthorizationToken(badges_Recipients_GET.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidDateFormat">
+                  </a> <!-- testInvalidDateFormat -->
+                  <span class="method-name">testInvalidDateFormat</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [400]
+	at Ollion.RestAssuredAssignment.badges_Recipients_GET.testInvalidDateFormat(badges_Recipients_GET.java:164)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidPageNumber">
+                  </a> <!-- testInvalidPageNumber -->
+                  <span class="method-name">testInvalidPageNumber</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [502]
+	at Ollion.RestAssuredAssignment.badges_Recipients_GET.testInvalidPageNumber(badges_Recipients_GET.java:111)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidPageSize">
+                  </a> <!-- testInvalidPageSize -->
+                  <span class="method-name">testInvalidPageSize</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [400]
+	at Ollion.RestAssuredAssignment.badges_Recipients_GET.testInvalidPageSize(badges_Recipients_GET.java:138)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMissingRequiredParameters">
+                  </a> <!-- testMissingRequiredParameters -->
+                  <span class="method-name">testMissingRequiredParameters</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [502]
+	at Ollion.RestAssuredAssignment.badges_Recipients_GET.testMissingRequiredParameters(badges_Recipients_GET.java:190)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidRequest">
+                  </a> <!-- testValidRequest -->
+                  <span class="method-name">testValidRequest</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Schema to use cannot be null
+	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+	at Ollion.RestAssuredAssignment.badges_Recipients_GET.testValidRequest(badges_Recipients_GET.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Ollion.RestAssuredAssignment.badges_tags_GET</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidAuthorizationToken">
+                  </a> <!-- testInvalidAuthorizationToken -->
+                  <span class="method-name">testInvalidAuthorizationToken</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [400]
+	at Ollion.RestAssuredAssignment.badges_tags_GET.testInvalidAuthorizationToken(badges_tags_GET.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidDateFormat">
+                  </a> <!-- testInvalidDateFormat -->
+                  <span class="method-name">testInvalidDateFormat</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [400]
+	at Ollion.RestAssuredAssignment.badges_tags_GET.testInvalidDateFormat(badges_tags_GET.java:222)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidMinParameter">
+                  </a> <!-- testInvalidMinParameter -->
+                  <span class="method-name">testInvalidMinParameter</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [502]
+	at Ollion.RestAssuredAssignment.badges_tags_GET.testInvalidMinParameter(badges_tags_GET.java:256)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidOrderParameter">
+                  </a> <!-- testInvalidOrderParameter -->
+                  <span class="method-name">testInvalidOrderParameter</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [502]
+	at Ollion.RestAssuredAssignment.badges_tags_GET.testInvalidOrderParameter(badges_tags_GET.java:191)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidPageNumber">
+                  </a> <!-- testInvalidPageNumber -->
+                  <span class="method-name">testInvalidPageNumber</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [502]
+	at Ollion.RestAssuredAssignment.badges_tags_GET.testInvalidPageNumber(badges_tags_GET.java:126)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidPageSize">
+                  </a> <!-- testInvalidPageSize -->
+                  <span class="method-name">testInvalidPageSize</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [400]
+	at Ollion.RestAssuredAssignment.badges_tags_GET.testInvalidPageSize(badges_tags_GET.java:157)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidSortParameter">
+                  </a> <!-- testInvalidSortParameter -->
+                  <span class="method-name">testInvalidSortParameter</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [502]
+	at Ollion.RestAssuredAssignment.badges_tags_GET.testInvalidSortParameter(badges_tags_GET.java:291)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMissingRequiredParameters">
+                  </a> <!-- testMissingRequiredParameters -->
+                  <span class="method-name">testMissingRequiredParameters</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [400] but found [502]
+	at Ollion.RestAssuredAssignment.badges_tags_GET.testMissingRequiredParameters(badges_tags_GET.java:318)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testValidRequest">
+                  </a> <!-- testValidRequest -->
+                  <span class="method-name">testValidRequest</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Schema to use cannot be null
+	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+	at Ollion.RestAssuredAssignment.badges_tags_GET.testValidRequest(badges_tags_GET.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\HP\eclipse-workspace\RestAssuredAssignment\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Ollion.RestAssuredAssignment.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Ollion.RestAssuredAssignment.badges_ids_GET&quot;/&gt;
+      &lt;class name=&quot;Ollion.RestAssuredAssignment.badges_tags_GET&quot;/&gt;
+      &lt;class name=&quot;Ollion.RestAssuredAssignment.badges_Recipients_GET&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(25);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testInvalidAuthorizationToken')
+data.setCell(0, 2, 'Ollion.RestAssuredAssignment.badges_ids_GET')
+data.setCell(0, 3, 6176);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testInvalidID')
+data.setCell(1, 2, 'Ollion.RestAssuredAssignment.badges_ids_GET')
+data.setCell(1, 3, 5485);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testInvalidMinParameter')
+data.setCell(2, 2, 'Ollion.RestAssuredAssignment.badges_ids_GET')
+data.setCell(2, 3, 2040);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testInvalidPageSize')
+data.setCell(3, 2, 'Ollion.RestAssuredAssignment.badges_Recipients_GET')
+data.setCell(3, 3, 1833);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testInvalidPageSize')
+data.setCell(4, 2, 'Ollion.RestAssuredAssignment.badges_tags_GET')
+data.setCell(4, 3, 1809);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testInvalidOrderParameter')
+data.setCell(5, 2, 'Ollion.RestAssuredAssignment.badges_tags_GET')
+data.setCell(5, 3, 1792);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testInvalidOrderParameter')
+data.setCell(6, 2, 'Ollion.RestAssuredAssignment.badges_ids_GET')
+data.setCell(6, 3, 1692);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testInvalidDateFormat')
+data.setCell(7, 2, 'Ollion.RestAssuredAssignment.badges_Recipients_GET')
+data.setCell(7, 3, 1652);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testInvalidSortParameter')
+data.setCell(8, 2, 'Ollion.RestAssuredAssignment.badges_tags_GET')
+data.setCell(8, 3, 1627);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testInvalidPageNumber')
+data.setCell(9, 2, 'Ollion.RestAssuredAssignment.badges_ids_GET')
+data.setCell(9, 3, 1587);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testInvalidPageNumber')
+data.setCell(10, 2, 'Ollion.RestAssuredAssignment.badges_Recipients_GET')
+data.setCell(10, 3, 1586);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testInvalidSortParameter')
+data.setCell(11, 2, 'Ollion.RestAssuredAssignment.badges_ids_GET')
+data.setCell(11, 3, 1550);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testInvalidPageSize')
+data.setCell(12, 2, 'Ollion.RestAssuredAssignment.badges_ids_GET')
+data.setCell(12, 3, 1544);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testMissingRequiredParameters')
+data.setCell(13, 2, 'Ollion.RestAssuredAssignment.badges_ids_GET')
+data.setCell(13, 3, 1536);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testMissingRequiredParameters')
+data.setCell(14, 2, 'Ollion.RestAssuredAssignment.badges_Recipients_GET')
+data.setCell(14, 3, 1533);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testInvalidPageNumber')
+data.setCell(15, 2, 'Ollion.RestAssuredAssignment.badges_tags_GET')
+data.setCell(15, 3, 1527);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testMissingRequiredParameters')
+data.setCell(16, 2, 'Ollion.RestAssuredAssignment.badges_tags_GET')
+data.setCell(16, 3, 1514);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testInvalidMinParameter')
+data.setCell(17, 2, 'Ollion.RestAssuredAssignment.badges_tags_GET')
+data.setCell(17, 3, 1512);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testValidRequest')
+data.setCell(18, 2, 'Ollion.RestAssuredAssignment.badges_ids_GET')
+data.setCell(18, 3, 1509);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testValidRequest')
+data.setCell(19, 2, 'Ollion.RestAssuredAssignment.badges_Recipients_GET')
+data.setCell(19, 3, 1497);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testInvalidDateFormat')
+data.setCell(20, 2, 'Ollion.RestAssuredAssignment.badges_tags_GET')
+data.setCell(20, 3, 1497);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testInvalidAuthorizationToken')
+data.setCell(21, 2, 'Ollion.RestAssuredAssignment.badges_tags_GET')
+data.setCell(21, 3, 1479);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testInvalidAuthorizationToken')
+data.setCell(22, 2, 'Ollion.RestAssuredAssignment.badges_Recipients_GET')
+data.setCell(22, 3, 1460);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testValidRequest')
+data.setCell(23, 2, 'Ollion.RestAssuredAssignment.badges_tags_GET')
+data.setCell(23, 3, 1456);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testInvalidDateFormat')
+data.setCell(24, 2, 'Ollion.RestAssuredAssignment.badges_ids_GET')
+data.setCell(24, 3, 1260);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 48 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvalidAuthorizationToken</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testInvalidAuthorizationToken</span>
+                <span class="reporter-method-output">
+testInvalidAuthorizationToken Response: 
+{
+    "error_id": 502,
+    "error_message": "too many requests from this IP, more requests available in 19585 seconds",
+    "error_name": "throttle_violation"
+}</span>
+                <span class="reporter-method-output">testInvalidAuthorizationToken Response status code: 
+400</span>
+                <span class="reporter-method-output">Test Failed: testInvalidAuthorizationToken</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvalidSortParameter</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testInvalidSortParameter</span>
+                <span class="reporter-method-output">testInvalidSortParameter Response: {
+    "error_id": 502,
+    "error_message": "too many requests from this IP, more requests available in 19575 seconds",
+    "error_name": "throttle_violation"
+}</span>
+                <span class="reporter-method-output">testInvalidSortParameter Response status code: 400</span>
+                <span class="reporter-method-output">testInvalidSortParameter Response status code check successful </span>
+                <span class="reporter-method-output">Test Failed: testInvalidSortParameter</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testValidRequest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testValidRequest</span>
+                <span class="reporter-method-output">Test Failed: testValidRequest</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvalidSortParameter</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testInvalidSortParameter</span>
+                <span class="reporter-method-output">testInvalidSortParameter Response: {
+    "error_id": 502,
+    "error_message": "too many requests from this IP, more requests available in 19589 seconds",
+    "error_name": "throttle_violation"
+}</span>
+                <span class="reporter-method-output">testInvalidSortParameter Response status code: 400</span>
+                <span class="reporter-method-output">testInvalidSortParameter Response status code check successful </span>
+                <span class="reporter-method-output">Test Failed: testInvalidSortParameter</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvalidOrderParameter</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testInvalidOrderParameter</span>
+                <span class="reporter-method-output">testInvalidOrderParameter Response: {
+    "error_id": 502,
+    "error_message": "too many requests from this IP, more requests available in 19580 seconds",
+    "error_name": "throttle_violation"
+}</span>
+                <span class="reporter-method-output">testInvalidOrderParameter Response status code: 400</span>
+                <span class="reporter-method-output">testInvalidOrderParameter Response status code check successful </span>
+                <span class="reporter-method-output">Test Failed: testInvalidOrderParameter</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testValidRequest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testValidRequest</span>
+                <span class="reporter-method-output">Test Failed: testValidRequest</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testMissingRequiredParameters</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testMissingRequiredParameters</span>
+                <span class="reporter-method-output">testMissingRequiredParameters Response: {
+    "error_id": 502,
+    "error_message": "too many requests from this IP, more requests available in 19573 seconds",
+    "error_name": "throttle_violation"
+}</span>
+                <span class="reporter-method-output">testMissingRequiredParameters Response status code: 400</span>
+                <span class="reporter-method-output">testMissingRequiredParameters Schema validation successful. </span>
+                <span class="reporter-method-output">testMissingRequiredParameters Response status code check successful </span>
+                <span class="reporter-method-output">Test Failed: testMissingRequiredParameters</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvalidDateFormat</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testInvalidDateFormat</span>
+                <span class="reporter-method-output">testInvalidDateFormat Response: {
+    "error_id": 502,
+    "error_message": "too many requests from this IP, more requests available in 19583 seconds",
+    "error_name": "throttle_violation"
+}</span>
+                <span class="reporter-method-output">testInvalidDateFormat Response status code: 400</span>
+                <span class="reporter-method-output">Test Failed: testInvalidDateFormat</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvalidPageNumber</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testInvalidPageNumber</span>
+                <span class="reporter-method-output">testInvalidPageNumber Response: {
+    "error_id": 502,
+    "error_message": "too many requests from this IP, more requests available in 19567 seconds",
+    "error_name": "throttle_violation"
+}</span>
+                <span class="reporter-method-output">testInvalidPageNumber Response status code: 400</span>
+                <span class="reporter-method-output">testInvalidPageNumber Response status code check successful </span>
+                <span class="reporter-method-output">Test Failed: testInvalidPageNumber</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvalidPageSize</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testInvalidPageSize</span>
+                <span class="reporter-method-output">testInvalidPageSize Response: {
+    "error_id": 502,
+    "error_message": "too many requests from this IP, more requests available in 19591 seconds",
+    "error_name": "throttle_violation"
+}</span>
+                <span class="reporter-method-output">testInvalidPageSize Response status code: 400</span>
+                <span class="reporter-method-output">Test Failed: testInvalidPageSize</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvalidAuthorizationToken</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testInvalidAuthorizationToken</span>
+                <span class="reporter-method-output">
+testInvalidAuthorizationToken Response: 
+{
+    "error_id": 502,
+    "error_message": "too many requests from this IP, more requests available in 19570 seconds",
+    "error_name": "throttle_violation"
+}</span>
+                <span class="reporter-method-output">testInvalidAuthorizationToken Response status code: 
+400</span>
+                <span class="reporter-method-output">Test Failed: testInvalidAuthorizationToken</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testMissingRequiredParameters</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testMissingRequiredParameters</span>
+                <span class="reporter-method-output">testMissingRequiredParameters Response: {
+    "error_id": 502,
+    "error_message": "too many requests from this IP, more requests available in 19564 seconds",
+    "error_name": "throttle_violation"
+}</span>
+                <span class="reporter-method-output">testMissingRequiredParameters Response status code: 400</span>
+                <span class="reporter-method-output">testMissingRequiredParameters Schema validation successful. </span>
+                <span class="reporter-method-output">testMissingRequiredParameters Response status code check successful </span>
+                <span class="reporter-method-output">Test Failed: testMissingRequiredParameters</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvalidID</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testInvalidID</span>
+                <span class="reporter-method-output">testInvalidID Response: {
+    "error_id": 502,
+    "error_message": "too many requests from this IP, more requests available in 19602 seconds",
+    "error_name": "throttle_violation"
+}</span>
+                <span class="reporter-method-output">testInvalidID Response status code: 400</span>
+                <span class="reporter-method-output">testInvalidID Response status code check successful </span>
+                <span class="reporter-method-output">Test Failed: testInvalidID</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvalidPageNumber</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testInvalidPageNumber</span>
+                <span class="reporter-method-output">testInvalidPageNumber Response: {
+    "error_id": 502,
+    "error_message": "too many requests from this IP, more requests available in 19592 seconds",
+    "error_name": "throttle_violation"
+}</span>
+                <span class="reporter-method-output">testInvalidPageNumber Response status code: 400</span>
+                <span class="reporter-method-output">testInvalidPageNumber Response status code check successful </span>
+                <span class="reporter-method-output">Test Failed: testInvalidPageNumber</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testValidRequest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testValidRequest</span>
+                <span class="reporter-method-output">Test Failed: testValidRequest</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvalidAuthorizationToken</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testInvalidAuthorizationToken</span>
+                <span class="reporter-method-output">
+testInvalidAuthorizationToken Response: 
+{
+    "error_id": 502,
+    "error_message": "too many requests from this IP, more requests available in 19605 seconds",
+    "error_name": "throttle_violation"
+}</span>
+                <span class="reporter-method-output">testInvalidAuthorizationToken Response status code: 
+400</span>
+                <span class="reporter-method-output">Test Failed: testInvalidAuthorizationToken</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvalidPageNumber</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testInvalidPageNumber</span>
+                <span class="reporter-method-output">testInvalidPageNumber Response: {
+    "error_id": 502,
+    "error_message": "too many requests from this IP, more requests available in 19578 seconds",
+    "error_name": "throttle_violation"
+}</span>
+                <span class="reporter-method-output">testInvalidPageNumber Response status code: 400</span>
+                <span class="reporter-method-output">testInvalidPageNumber Response status code check successful </span>
+                <span class="reporter-method-output">Test Failed: testInvalidPageNumber</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvalidOrderParameter</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testInvalidOrderParameter</span>
+                <span class="reporter-method-output">testInvalidOrderParameter Response: {
+    "error_id": 502,
+    "error_message": "too many requests from this IP, more requests available in 19594 seconds",
+    "error_name": "throttle_violation"
+}</span>
+                <span class="reporter-method-output">testInvalidOrderParameter Response status code: 400</span>
+                <span class="reporter-method-output">testInvalidOrderParameter Response status code check successful </span>
+                <span class="reporter-method-output">Test Failed: testInvalidOrderParameter</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvalidPageSize</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testInvalidPageSize</span>
+                <span class="reporter-method-output">testInvalidPageSize Response: {
+    "error_id": 502,
+    "error_message": "too many requests from this IP, more requests available in 19565 seconds",
+    "error_name": "throttle_violation"
+}</span>
+                <span class="reporter-method-output">testInvalidPageSize Response status code: 400</span>
+                <span class="reporter-method-output">Test Failed: testInvalidPageSize</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvalidDateFormat</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testInvalidDateFormat</span>
+                <span class="reporter-method-output">testInvalidDateFormat Response: {
+    "error_id": 502,
+    "error_message": "too many requests from this IP, more requests available in 19569 seconds",
+    "error_name": "throttle_violation"
+}</span>
+                <span class="reporter-method-output">testInvalidDateFormat Response status code: 400</span>
+                <span class="reporter-method-output">Test Failed: testInvalidDateFormat</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvalidMinParameter</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testInvalidMinParameter</span>
+                <span class="reporter-method-output">testInvalidMinParameter Response: {
+    "error_id": 502,
+    "error_message": "too many requests from this IP, more requests available in 19582 seconds",
+    "error_name": "throttle_violation"
+}</span>
+                <span class="reporter-method-output">testInvalidMinParameter Response status code: 400</span>
+                <span class="reporter-method-output">testInvalidMinParameter Response status code check successful </span>
+                <span class="reporter-method-output">Test Failed: testInvalidMinParameter</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testMissingRequiredParameters</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testMissingRequiredParameters</span>
+                <span class="reporter-method-output">testMissingRequiredParameters Response: {
+    "error_id": 502,
+    "error_message": "too many requests from this IP, more requests available in 19588 seconds",
+    "error_name": "throttle_violation"
+}</span>
+                <span class="reporter-method-output">testMissingRequiredParameters Response status code: 400</span>
+                <span class="reporter-method-output">testMissingRequiredParameters Schema validation successful. </span>
+                <span class="reporter-method-output">testMissingRequiredParameters Response status code check successful </span>
+                <span class="reporter-method-output">Test Failed: testMissingRequiredParameters</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvalidMinParameter</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testInvalidMinParameter</span>
+                <span class="reporter-method-output">testInvalidMinParameter Response: {
+    "error_id": 502,
+    "error_message": "too many requests from this IP, more requests available in 19596 seconds",
+    "error_name": "throttle_violation"
+}</span>
+                <span class="reporter-method-output">testInvalidMinParameter Response status code: 400</span>
+                <span class="reporter-method-output">testInvalidMinParameter Response status code check successful </span>
+                <span class="reporter-method-output">Test Failed: testInvalidMinParameter</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvalidPageSize</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testInvalidPageSize</span>
+                <span class="reporter-method-output">testInvalidPageSize Response: {
+    "error_id": 502,
+    "error_message": "too many requests from this IP, more requests available in 19577 seconds",
+    "error_name": "throttle_violation"
+}</span>
+                <span class="reporter-method-output">testInvalidPageSize Response status code: 400</span>
+                <span class="reporter-method-output">Test Failed: testInvalidPageSize</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testInvalidDateFormat</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Started: testInvalidDateFormat</span>
+                <span class="reporter-method-output">testInvalidDateFormat Response: {
+    "error_id": 502,
+    "error_message": "too many requests from this IP, more requests available in 19603 seconds",
+    "error_name": "throttle_violation"
+}</span>
+                <span class="reporter-method-output">testInvalidDateFormat Response status code: 400</span>
+                <span class="reporter-method-output">Test Failed: testInvalidDateFormat</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Ollion.RestAssuredAssignment.badges_ids_GET</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidAuthorizationToken</span>
+                <span class="method-start">1302 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidDateFormat</span>
+                <span class="method-start">7507 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidID</span>
+                <span class="method-start">8776 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidMinParameter</span>
+                <span class="method-start">14283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidOrderParameter</span>
+                <span class="method-start">16363 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidPageNumber</span>
+                <span class="method-start">18065 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidPageSize</span>
+                <span class="method-start">19659 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidSortParameter</span>
+                <span class="method-start">21213 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testMissingRequiredParameters</span>
+                <span class="method-start">22768 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testValidRequest</span>
+                <span class="method-start">24316 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Ollion.RestAssuredAssignment.badges_tags_GET</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">25835 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidAuthorizationToken</span>
+                <span class="method-start">25837 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidDateFormat</span>
+                <span class="method-start">27321 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidMinParameter</span>
+                <span class="method-start">28830 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidOrderParameter</span>
+                <span class="method-start">30346 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidPageNumber</span>
+                <span class="method-start">32143 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidPageSize</span>
+                <span class="method-start">33675 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidSortParameter</span>
+                <span class="method-start">35489 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testMissingRequiredParameters</span>
+                <span class="method-start">37121 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testValidRequest</span>
+                <span class="method-start">38639 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Ollion.RestAssuredAssignment.badges_Recipients_GET</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">40107 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidAuthorizationToken</span>
+                <span class="method-start">40110 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidDateFormat</span>
+                <span class="method-start">41575 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidPageNumber</span>
+                <span class="method-start">43232 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testInvalidPageSize</span>
+                <span class="method-start">44822 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testMissingRequiredParameters</span>
+                <span class="method-start">46661 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testValidRequest</span>
+                <span class="method-start">48199 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
