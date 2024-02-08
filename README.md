@@ -9,7 +9,7 @@ Note: If we try running too many times, we will start getting Status-502 error w
 # Prerequisites
 Before running the automation scripts, ensure you have the following installed:
 
-- Java Development Kit (JDK) - 11
+- Java Development Kit (JDK) - 21
 - Maven
 - TestNG (for running the test suite)
 
