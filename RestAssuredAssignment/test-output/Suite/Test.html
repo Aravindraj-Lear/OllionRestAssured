@@ -1,0 +1,737 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>25/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Feb 08 09:33:19 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>51 seconds (51150 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_ids_GET.testInvalidAuthorizationToken()'><b>testInvalidAuthorizationToken</b><br>Test class: Ollion.RestAssuredAssignment.badges_ids_GET<br/>
+<a href="#Output-1527152775" onClick='toggleBox("Output-1527152775", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1527152775" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1527152775">
+Test Started: testInvalidAuthorizationToken<br/>
+
+testInvalidAuthorizationToken Response: 
+{
+    "items": [
+        {
+            "badge_type": "tag_based",
+            "award_count": 315,
+            "rank": "bronze",
+            "badge_id": 928,
+            "link": "https://stackoverflow.com/badges/928/go",
+            "name": "go"
+        }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 216
+}<br/>
+testInvalidAuthorizationToken Response status code: 
+200<br/>
+testInvalidAuthorizationToken Response status code check successful 
+<br/>
+Test Passed: testInvalidAuthorizationToken<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>Ollion.RestAssuredAssignment.badges_ids_GET@6e20b53a</td></tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_Recipients_GET.testMissingRequiredParameters()'><b>testMissingRequiredParameters</b><br>Test class: Ollion.RestAssuredAssignment.badges_Recipients_GET<br/>
+<a href="#Output-599590015" onClick='toggleBox("Output-599590015", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-599590015" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-599590015">
+Test Started: testMissingRequiredParameters<br/>
+testMissingRequiredParameters Response: {
+    "error_id": 400,
+    "error_message": "site is required",
+    "error_name": "bad_parameter"
+}<br/>
+testMissingRequiredParameters Response status code: 400<br/>
+testMissingRequiredParameters Schema validation successful. <br/>
+testMissingRequiredParameters Response status code check successful <br/>
+Test Passed: testMissingRequiredParameters<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Ollion.RestAssuredAssignment.badges_Recipients_GET@5af3afd9</td></tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_Recipients_GET.testInvalidDateFormat()'><b>testInvalidDateFormat</b><br>Test class: Ollion.RestAssuredAssignment.badges_Recipients_GET<br/>
+<a href="#Output-1027158270" onClick='toggleBox("Output-1027158270", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1027158270" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1027158270">
+Test Started: testInvalidDateFormat<br/>
+testInvalidDateFormat Response: {
+    "items": [
+        
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 196
+}<br/>
+testInvalidDateFormat Response status code: 200<br/>
+testInvalidDateFormat Response status code check successful <br/>
+Test Passed: testInvalidDateFormat<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Ollion.RestAssuredAssignment.badges_Recipients_GET@5af3afd9</td></tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_Recipients_GET.testInvalidAuthorizationToken()'><b>testInvalidAuthorizationToken</b><br>Test class: Ollion.RestAssuredAssignment.badges_Recipients_GET<br/>
+<a href="#Output-946260334" onClick='toggleBox("Output-946260334", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-946260334" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-946260334">
+Test Started: testInvalidAuthorizationToken<br/>
+
+testInvalidAuthorizationToken Response: 
+{
+    "items": [
+        {
+            "user": {
+                "account_id": 30477327,
+                "reputation": 1,
+                "user_id": 23355770,
+                "user_type": "registered",
+                "profile_image": "https://www.gravatar.com/avatar/9727db3177e315fbf069e241514d4e05?s=256&d=identicon&r=PG&f=y&so-version=2",
+                "display_name": "user23355770",
+                "link": "https://stackoverflow.com/users/23355770/user23355770"
+            },
+            "badge_type": "named",
+            "rank": "bronze",
+            "badge_id": 2600,
+            "link": "https://stackoverflow.com/badges/2600/informed",
+            "name": "Informed"
+        },
+        {
+            "user": {
+                "account_id": 30479628,
+                "reputation": 1,
+                "user_id": 23357464,
+                "user_type": "registered",
+                "profile_image": "https://lh3.googleusercontent.com/a/ACg8ocJXr4CgwgjOncuHYIx-Ydj6AUfL2xqHnYA6by9pJ51MQ4M=k-s256",
+                "display_name": "Mike Hidro",
+                "link": "https://stackoverflow.com/users/23357464/mike-hidro"
+            },
+            "badge_type": "named",
+            "rank": "bronze",
+            "badge_id": 2600,
+            "link": "https://stackoverflow.com/badges/2600/informed",
+            "name": "Informed"
+        }
+    ],
+    "has_more": true,
+    "quota_max": 300,
+    "quota_remaining": 197
+}<br/>
+testInvalidAuthorizationToken Response status code: 
+200<br/>
+testInvalidAuthorizationToken Response status code check successful 
+<br/>
+Test Passed: testInvalidAuthorizationToken<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Ollion.RestAssuredAssignment.badges_Recipients_GET@5af3afd9</td></tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_ids_GET.testValidRequest()'><b>testValidRequest</b><br>Test class: Ollion.RestAssuredAssignment.badges_ids_GET<br/>
+<a href="#Output-790689709" onClick='toggleBox("Output-790689709", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-790689709" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-790689709">
+Test Started: testValidRequest<br/>
+testValidRequest Response: {
+    "items": [
+        {
+            "badge_type": "tag_based",
+            "award_count": 315,
+            "rank": "bronze",
+            "badge_id": 928,
+            "link": "https://stackoverflow.com/badges/928/go",
+            "name": "go"
+        }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 207
+}<br/>
+testValidRequest Response status code: 200<br/>
+testValidRequest Schema validation successful. Json structure, required fields and field types are validated with this. <br/>
+testValidRequest Response status code check successful <br/>
+Test Passed: testValidRequest<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Ollion.RestAssuredAssignment.badges_ids_GET@6e20b53a</td></tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_Recipients_GET.testInvalidPageSize()'><b>testInvalidPageSize</b><br>Test class: Ollion.RestAssuredAssignment.badges_Recipients_GET<br/>
+<a href="#Output-1345063038" onClick='toggleBox("Output-1345063038", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1345063038" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1345063038">
+Test Started: testInvalidPageSize<br/>
+testInvalidPageSize Response: {
+    "items": [
+        
+    ],
+    "has_more": true,
+    "quota_max": 300,
+    "quota_remaining": 194
+}<br/>
+testInvalidPageSize Response status code: 200<br/>
+testInvalidPageSize Response status code check successful <br/>
+Test Passed: testInvalidPageSize<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Ollion.RestAssuredAssignment.badges_Recipients_GET@5af3afd9</td></tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_ids_GET.testMissingRequiredParameters()'><b>testMissingRequiredParameters</b><br>Test class: Ollion.RestAssuredAssignment.badges_ids_GET<br/>
+<a href="#Output-1398428044" onClick='toggleBox("Output-1398428044", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1398428044" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1398428044">
+Test Started: testMissingRequiredParameters<br/>
+testMissingRequiredParameters Response: {
+    "error_id": 400,
+    "error_message": "site is required",
+    "error_name": "bad_parameter"
+}<br/>
+testMissingRequiredParameters Response status code: 400<br/>
+testMissingRequiredParameters Schema validation successful. <br/>
+testMissingRequiredParameters Response status code check successful <br/>
+Test Passed: testMissingRequiredParameters<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Ollion.RestAssuredAssignment.badges_ids_GET@6e20b53a</td></tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_tags_GET.testInvalidAuthorizationToken()'><b>testInvalidAuthorizationToken</b><br>Test class: Ollion.RestAssuredAssignment.badges_tags_GET<br/>
+<a href="#Output-476987385" onClick='toggleBox("Output-476987385", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-476987385" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-476987385">
+Test Started: testInvalidAuthorizationToken<br/>
+
+testInvalidAuthorizationToken Response: 
+{
+    "items": [
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 8488,
+            "link": "https://stackoverflow.com/badges/8488/gojs",
+            "name": "gojs"
+        }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 206
+}<br/>
+testInvalidAuthorizationToken Response status code: 
+200<br/>
+testInvalidAuthorizationToken Response status code check successful 
+<br/>
+Test Passed: testInvalidAuthorizationToken<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Ollion.RestAssuredAssignment.badges_tags_GET@661972b0</td></tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_ids_GET.testInvalidOrderParameter()'><b>testInvalidOrderParameter</b><br>Test class: Ollion.RestAssuredAssignment.badges_ids_GET<br/>
+<a href="#Output-1651923692" onClick='toggleBox("Output-1651923692", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1651923692" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1651923692">
+Test Started: testInvalidOrderParameter<br/>
+testInvalidOrderParameter Response: {
+    "error_id": 400,
+    "error_message": "order",
+    "error_name": "bad_parameter"
+}<br/>
+testInvalidOrderParameter Response status code: 400<br/>
+testInvalidOrderParameter Response status code check successful <br/>
+Test Passed: testInvalidOrderParameter<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Ollion.RestAssuredAssignment.badges_ids_GET@6e20b53a</td></tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_ids_GET.testInvalidDateFormat()'><b>testInvalidDateFormat</b><br>Test class: Ollion.RestAssuredAssignment.badges_ids_GET<br/>
+<a href="#Output-2036949810" onClick='toggleBox("Output-2036949810", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2036949810" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2036949810">
+Test Started: testInvalidDateFormat<br/>
+testInvalidDateFormat Response: {
+    "items": [
+        {
+            "badge_type": "tag_based",
+            "award_count": 315,
+            "rank": "bronze",
+            "badge_id": 928,
+            "link": "https://stackoverflow.com/badges/928/go",
+            "name": "go"
+        }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 215
+}<br/>
+testInvalidDateFormat Response status code: 200<br/>
+testInvalidDateFormat Response status code check successful <br/>
+Test Passed: testInvalidDateFormat<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Ollion.RestAssuredAssignment.badges_ids_GET@6e20b53a</td></tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_tags_GET.testInvalidDateFormat()'><b>testInvalidDateFormat</b><br>Test class: Ollion.RestAssuredAssignment.badges_tags_GET<br/>
+<a href="#Output-1518712038" onClick='toggleBox("Output-1518712038", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1518712038" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1518712038">
+Test Started: testInvalidDateFormat<br/>
+testInvalidDateFormat Response: {
+    "items": [
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 8488,
+            "link": "https://stackoverflow.com/badges/8488/gojs",
+            "name": "gojs"
+        }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 205
+}<br/>
+testInvalidDateFormat Response status code: 200<br/>
+testInvalidDateFormat Response status code check successful <br/>
+Test Passed: testInvalidDateFormat<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Ollion.RestAssuredAssignment.badges_tags_GET@661972b0</td></tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_tags_GET.testValidRequest()'><b>testValidRequest</b><br>Test class: Ollion.RestAssuredAssignment.badges_tags_GET<br/>
+<a href="#Output-663741480" onClick='toggleBox("Output-663741480", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-663741480" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-663741480">
+Test Started: testValidRequest<br/>
+testValidRequest Response: {
+    "items": [
+        {
+            "badge_type": "tag_based",
+            "award_count": 1,
+            "rank": "bronze",
+            "badge_id": 8488,
+            "link": "https://stackoverflow.com/badges/8488/gojs",
+            "name": "gojs"
+        }
+    ],
+    "has_more": false,
+    "quota_max": 300,
+    "quota_remaining": 198
+}<br/>
+testValidRequest Response status code: 200<br/>
+testValidRequest Schema validation successful. Json structure, required fields and field types are validated with this. <br/>
+testValidRequest Response status code check successful <br/>
+Test Passed: testValidRequest<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Ollion.RestAssuredAssignment.badges_tags_GET@661972b0</td></tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_ids_GET.testInvalidMinParameter()'><b>testInvalidMinParameter</b><br>Test class: Ollion.RestAssuredAssignment.badges_ids_GET<br/>
+<a href="#Output-696031899" onClick='toggleBox("Output-696031899", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-696031899" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-696031899">
+Test Started: testInvalidMinParameter<br/>
+testInvalidMinParameter Response: {
+    "error_id": 400,
+    "error_message": "min",
+    "error_name": "bad_parameter"
+}<br/>
+testInvalidMinParameter Response status code: 400<br/>
+testInvalidMinParameter Response status code check successful <br/>
+Test Passed: testInvalidMinParameter<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Ollion.RestAssuredAssignment.badges_ids_GET@6e20b53a</td></tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_tags_GET.testMissingRequiredParameters()'><b>testMissingRequiredParameters</b><br>Test class: Ollion.RestAssuredAssignment.badges_tags_GET<br/>
+<a href="#Output-614054257" onClick='toggleBox("Output-614054257", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-614054257" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-614054257">
+Test Started: testMissingRequiredParameters<br/>
+testMissingRequiredParameters Response: {
+    "error_id": 400,
+    "error_message": "site is required",
+    "error_name": "bad_parameter"
+}<br/>
+testMissingRequiredParameters Response status code: 400<br/>
+testMissingRequiredParameters Schema validation successful. <br/>
+testMissingRequiredParameters Response status code check successful <br/>
+Test Passed: testMissingRequiredParameters<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Ollion.RestAssuredAssignment.badges_tags_GET@661972b0</td></tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_tags_GET.testInvalidMinParameter()'><b>testInvalidMinParameter</b><br>Test class: Ollion.RestAssuredAssignment.badges_tags_GET<br/>
+<a href="#Output-1457166003" onClick='toggleBox("Output-1457166003", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1457166003" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1457166003">
+Test Started: testInvalidMinParameter<br/>
+testInvalidMinParameter Response: {
+    "error_id": 400,
+    "error_message": "min",
+    "error_name": "bad_parameter"
+}<br/>
+testInvalidMinParameter Response status code: 400<br/>
+testInvalidMinParameter Response status code check successful <br/>
+Test Passed: testInvalidMinParameter<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Ollion.RestAssuredAssignment.badges_tags_GET@661972b0</td></tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_tags_GET.testInvalidPageSize()'><b>testInvalidPageSize</b><br>Test class: Ollion.RestAssuredAssignment.badges_tags_GET<br/>
+<a href="#Output-338048780" onClick='toggleBox("Output-338048780", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-338048780" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-338048780">
+Test Started: testInvalidPageSize<br/>
+testInvalidPageSize Response: {
+    "items": [
+        
+    ],
+    "has_more": true,
+    "quota_max": 300,
+    "quota_remaining": 201
+}<br/>
+testInvalidPageSize Response status code: 200<br/>
+testInvalidPageSize Response status code check successful <br/>
+Test Passed: testInvalidPageSize<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Ollion.RestAssuredAssignment.badges_tags_GET@661972b0</td></tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_tags_GET.testInvalidOrderParameter()'><b>testInvalidOrderParameter</b><br>Test class: Ollion.RestAssuredAssignment.badges_tags_GET<br/>
+<a href="#Output-2062604571" onClick='toggleBox("Output-2062604571", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2062604571" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2062604571">
+Test Started: testInvalidOrderParameter<br/>
+testInvalidOrderParameter Response: {
+    "error_id": 400,
+    "error_message": "order",
+    "error_name": "bad_parameter"
+}<br/>
+testInvalidOrderParameter Response status code: 400<br/>
+testInvalidOrderParameter Response status code check successful <br/>
+Test Passed: testInvalidOrderParameter<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Ollion.RestAssuredAssignment.badges_tags_GET@661972b0</td></tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_Recipients_GET.testValidRequest()'><b>testValidRequest</b><br>Test class: Ollion.RestAssuredAssignment.badges_Recipients_GET<br/>
+<a href="#Output-700816238" onClick='toggleBox("Output-700816238", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-700816238" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-700816238">
+Test Started: testValidRequest<br/>
+testValidRequest Response: {
+    "items": [
+        {
+            "user": {
+                "account_id": 30477327,
+                "reputation": 1,
+                "user_id": 23355770,
+                "user_type": "registered",
+                "profile_image": "https://www.gravatar.com/avatar/9727db3177e315fbf069e241514d4e05?s=256&d=identicon&r=PG&f=y&so-version=2",
+                "display_name": "user23355770",
+                "link": "https://stackoverflow.com/users/23355770/user23355770"
+            },
+            "badge_type": "named",
+            "rank": "bronze",
+            "badge_id": 2600,
+            "link": "https://stackoverflow.com/badges/2600/informed",
+            "name": "Informed"
+        },
+        {
+            "user": {
+                "account_id": 30479628,
+                "reputation": 1,
+                "user_id": 23357464,
+                "user_type": "registered",
+                "profile_image": "https://lh3.googleusercontent.com/a/ACg8ocJXr4CgwgjOncuHYIx-Ydj6AUfL2xqHnYA6by9pJ51MQ4M=k-s256",
+                "display_name": "Mike Hidro",
+                "link": "https://stackoverflow.com/users/23357464/mike-hidro"
+            },
+            "badge_type": "named",
+            "rank": "bronze",
+            "badge_id": 2600,
+            "link": "https://stackoverflow.com/badges/2600/informed",
+            "name": "Informed"
+        }
+    ],
+    "has_more": true,
+    "quota_max": 300,
+    "quota_remaining": 192
+}<br/>
+testValidRequest Response status code: 200<br/>
+testValidRequest Schema validation successful. Json structure, required fields and field types are validated with this. <br/>
+testValidRequest Response status code check successful <br/>
+Test Passed: testValidRequest<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Ollion.RestAssuredAssignment.badges_Recipients_GET@5af3afd9</td></tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_ids_GET.testInvalidPageNumber()'><b>testInvalidPageNumber</b><br>Test class: Ollion.RestAssuredAssignment.badges_ids_GET<br/>
+<a href="#Output-1430104337" onClick='toggleBox("Output-1430104337", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1430104337" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1430104337">
+Test Started: testInvalidPageNumber<br/>
+testInvalidPageNumber Response: {
+    "error_id": 400,
+    "error_message": "page",
+    "error_name": "bad_parameter"
+}<br/>
+testInvalidPageNumber Response status code: 400<br/>
+testInvalidPageNumber Response status code check successful <br/>
+Test Passed: testInvalidPageNumber<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Ollion.RestAssuredAssignment.badges_ids_GET@6e20b53a</td></tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_ids_GET.testInvalidID()'><b>testInvalidID</b><br>Test class: Ollion.RestAssuredAssignment.badges_ids_GET<br/>
+<a href="#Output-582857168" onClick='toggleBox("Output-582857168", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-582857168" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-582857168">
+Test Started: testInvalidID<br/>
+testInvalidID Response: {
+    "error_id": 404,
+    "error_message": "no method found with this name",
+    "error_name": "no_method"
+}<br/>
+testInvalidID Response status code: 400<br/>
+testInvalidID Response status code check successful <br/>
+Test Passed: testInvalidID<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Ollion.RestAssuredAssignment.badges_ids_GET@6e20b53a</td></tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_tags_GET.testInvalidPageNumber()'><b>testInvalidPageNumber</b><br>Test class: Ollion.RestAssuredAssignment.badges_tags_GET<br/>
+<a href="#Output-34940856" onClick='toggleBox("Output-34940856", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-34940856" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-34940856">
+Test Started: testInvalidPageNumber<br/>
+testInvalidPageNumber Response: {
+    "error_id": 400,
+    "error_message": "page",
+    "error_name": "bad_parameter"
+}<br/>
+testInvalidPageNumber Response status code: 400<br/>
+testInvalidPageNumber Response status code check successful <br/>
+Test Passed: testInvalidPageNumber<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Ollion.RestAssuredAssignment.badges_tags_GET@661972b0</td></tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_ids_GET.testInvalidPageSize()'><b>testInvalidPageSize</b><br>Test class: Ollion.RestAssuredAssignment.badges_ids_GET<br/>
+<a href="#Output-1929649021" onClick='toggleBox("Output-1929649021", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1929649021" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1929649021">
+Test Started: testInvalidPageSize<br/>
+testInvalidPageSize Response: {
+    "items": [
+        
+    ],
+    "has_more": true,
+    "quota_max": 300,
+    "quota_remaining": 210
+}<br/>
+testInvalidPageSize Response status code: 200<br/>
+testInvalidPageSize Response status code check successful <br/>
+Test Passed: testInvalidPageSize<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Ollion.RestAssuredAssignment.badges_ids_GET@6e20b53a</td></tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_ids_GET.testInvalidSortParameter()'><b>testInvalidSortParameter</b><br>Test class: Ollion.RestAssuredAssignment.badges_ids_GET<br/>
+<a href="#Output-2139431292" onClick='toggleBox("Output-2139431292", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2139431292" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2139431292">
+Test Started: testInvalidSortParameter<br/>
+testInvalidSortParameter Response: {
+    "error_id": 400,
+    "error_message": "sort",
+    "error_name": "bad_parameter"
+}<br/>
+testInvalidSortParameter Response status code: 400<br/>
+testInvalidSortParameter Response status code check successful <br/>
+Test Passed: testInvalidSortParameter<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Ollion.RestAssuredAssignment.badges_ids_GET@6e20b53a</td></tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_Recipients_GET.testInvalidPageNumber()'><b>testInvalidPageNumber</b><br>Test class: Ollion.RestAssuredAssignment.badges_Recipients_GET<br/>
+<a href="#Output-46087876" onClick='toggleBox("Output-46087876", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-46087876" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-46087876">
+Test Started: testInvalidPageNumber<br/>
+testInvalidPageNumber Response: {
+    "error_id": 400,
+    "error_message": "page",
+    "error_name": "bad_parameter"
+}<br/>
+testInvalidPageNumber Response status code: 400<br/>
+testInvalidPageNumber Response status code check successful <br/>
+Test Passed: testInvalidPageNumber<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Ollion.RestAssuredAssignment.badges_Recipients_GET@5af3afd9</td></tr>
+<tr>
+<td title='Ollion.RestAssuredAssignment.badges_tags_GET.testInvalidSortParameter()'><b>testInvalidSortParameter</b><br>Test class: Ollion.RestAssuredAssignment.badges_tags_GET<br/>
+<a href="#Output-591589887" onClick='toggleBox("Output-591589887", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-591589887" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-591589887">
+Test Started: testInvalidSortParameter<br/>
+testInvalidSortParameter Response: {
+    "error_id": 400,
+    "error_message": "sort",
+    "error_name": "bad_parameter"
+}<br/>
+testInvalidSortParameter Response status code: 400<br/>
+testInvalidSortParameter Response status code check successful <br/>
+Test Passed: testInvalidSortParameter<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Ollion.RestAssuredAssignment.badges_tags_GET@661972b0</td></tr>
+</table><p>
+</body>
+</html>
